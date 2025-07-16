@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: spring-framework-petclinic
-  namespace: openshift-gitops
+  namespace: sample
 spec:
   destination:
     namespace: sample
