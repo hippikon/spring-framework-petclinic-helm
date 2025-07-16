@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc 
   project: default 
   source: 
-    path: deploy-petclinic/application-manifest
+    path: application-manifest
     repoURL: https://github.com/ksingh7/argocd-openshift
     targetRevision: main
   syncPolicy: 
