@@ -10,7 +10,7 @@ spec:
   project: default 
   source: 
     path: application-manifest
-    repoURL: https://github.com/ksingh7/argocd-openshift
+    repoURL: https://github.com/hippikon/spring-framework-petclinic-helm
     targetRevision: main
   syncPolicy: 
     automated:
