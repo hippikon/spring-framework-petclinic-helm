@@ -1,0 +1,14 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: spring-framework-petclinic
+  name: spring-framework-petclinic
+  namespace: sample
+spec:
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: spring-framework-petclinic
+    weight: 100

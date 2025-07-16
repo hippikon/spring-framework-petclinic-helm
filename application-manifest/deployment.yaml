@@ -1,0 +1,25 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: spring-framework-petclinic
+  name: spring-framework-petclinic
+  namespace: sample
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-framework-petclinic
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: spring-framework-petclinic
+    spec:
+      containers:
+      - image: docker.io/springcommunity/spring-framework-petclinic@sha256:2766c68b03afd64d154339a2574cdf18db1a1b92b3013a4d6a3dfb9be1bac6cd
+        name: spring-framework-petclinic
+        env:
+        - name: COLOR
+          value: "blue"
